@@ -4,9 +4,9 @@ import torch
 import numpy as np
 from torch_geometric.data import Data
 
-edgelists = pd.read_csv('data/elliptic_bitcoin_dataset/elliptic_txs_edgelist.csv')
-features = pd.read_csv('data/elliptic_bitcoin_dataset/elliptic_txs_features.csv')
-classes = pd.read_csv('data/elliptic_bitcoin_dataset/elliptic_txs_classes.csv')
+edgelists = pd.read_csv('data/elliptic/elliptic_txs_edgelist.csv')
+features = pd.read_csv('data/elliptic/elliptic_txs_features.csv')
+classes = pd.read_csv('data/elliptic/elliptic_txs_classes.csv')
 
 features.columns = ['txId'] + [f"V{i + 1}" for i in range(len(features.columns) - 1)]
 label_map = {'1': 0, '2': 1, 'unknown': 2}
@@ -36,5 +36,5 @@ mask_known = (data.y != 2)
 print("Number of nodes:", data.num_nodes)
 print("Number of edges:", data.num_edges)
 print("Feature size:", data.num_node_features)
-torch.save(data, 'data/elliptic_bitcoin_dataset/elliptic_data.pt')
-print("Data saved to 'data/elliptic_bitcoin_dataset/elliptic_data.pt'")
+torch.save(data, 'data/elliptic/elliptic_data.pt')
+print("Data saved to 'data/elliptic/elliptic_data.pt'")
