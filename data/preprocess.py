@@ -4,9 +4,9 @@ import torch
 import numpy as np
 from torch_geometric.data import Data
 
-edgelists = pd.read_csv('data/elliptic/elliptic_txs_edgelist.csv')
-features = pd.read_csv('data/elliptic/elliptic_txs_features.csv')
-classes = pd.read_csv('data/elliptic/elliptic_txs_classes.csv')
+edgelists = pd.read_csv('elliptic/elliptic_txs_edgelist.csv')
+features = pd.read_csv('elliptic/elliptic_txs_features.csv')
+classes = pd.read_csv('elliptic/elliptic_txs_classes.csv')
 
 features.columns = ['txId'] + [f"V{i + 1}" for i in range(len(features.columns) - 1)]
 label_map = {'1': 0, '2': 1, 'unknown': 2}
