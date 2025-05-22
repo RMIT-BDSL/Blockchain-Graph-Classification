@@ -16,13 +16,11 @@ from tqdm.auto import tqdm
 from torch_geometric.data import Data
 from torch_geometric.utils import dropout_edge, subgraph
 from yaml import safe_load
-from model.GAT import *
-from model.GCN import *
+import model
 
-model_dict = {
-    'GAT': GAT,
-    'GCN': GCN,
-    'GATv2': GATv2
+# one-liner that pulls each symbol from the package into a dict
+model_dict = { 
+    name: getattr(model, name) for name in model.__all__
 }
 
 # -------------------- Setup Logger --------------------
