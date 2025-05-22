@@ -2,7 +2,7 @@ pretrained: false
 checkpoint: "checkpoints/elliptic"
 
 model:
-  type: "GAT"
+  type: "GATv2"
   params:
     hidden_channels: 64
     out_channels: 32

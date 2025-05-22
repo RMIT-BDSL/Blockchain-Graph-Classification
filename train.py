@@ -21,7 +21,8 @@ from model.GCN import *
 
 model_dict = {
     'GAT': GAT,
-    'GCN': GCN
+    'GCN': GCN,
+    'GATv2': GATv2
 }
 
 # -------------------- Setup Logger --------------------
