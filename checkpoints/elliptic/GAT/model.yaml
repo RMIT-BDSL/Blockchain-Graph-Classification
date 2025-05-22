@@ -1,0 +1,10 @@
+checkpoint: checkpoints/elliptic
+model:
+  params:
+    batchnorm: true
+    dropout: 0.5
+    hidden_channels: 64
+    num_layers: 2
+    out_channels: 32
+  type: GAT
+pretrained: false

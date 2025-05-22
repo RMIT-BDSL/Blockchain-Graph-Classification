@@ -1,12 +1,11 @@
 pretrained: false
-checkpoint: "checkpoints/elliptic_model.pt"
+checkpoint: "checkpoints/elliptic"
 
 model:
-  type: "GCN"
+  type: "GAT"
   params:
     hidden_channels: 64
     out_channels: 32
-    num_layers: 5
+    num_layers: 2
     dropout: 0.5
-    # layer_heads: [4, 4, 1] # for GAT
     batchnorm: true
