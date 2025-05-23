@@ -10,6 +10,7 @@ training:
   batch_size: 1024
   epochs: 1024
   finetune_epochs: 100
+  fold: 5
   patience: 50
   pretrain_epochs: 50
   ratio:
