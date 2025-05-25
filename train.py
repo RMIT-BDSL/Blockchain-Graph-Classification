@@ -72,7 +72,7 @@ def set_masks(train_idx, val_idx, test_idx=None):
     data.val_mask   = torch.zeros(data.num_nodes, dtype=torch.bool, device=device)
     data.test_mask  = torch.zeros(data.num_nodes, dtype=torch.bool, device=device)
     data.train_mask[train_idx] = True
-    data.val_mask[  val_idx]   = True
+    data.val_mask[val_idx]     = True
     if test_idx is not None:
         data.test_mask[test_idx] = True
 

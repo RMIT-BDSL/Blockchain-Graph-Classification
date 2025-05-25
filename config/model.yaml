@@ -5,7 +5,7 @@ model:
   type: "SAGE"
   params:
     hidden_channels: 64
-    out_channels: 32
+    out_channels: 2
     num_layers: 2
     dropout: 0.5
     batchnorm: true

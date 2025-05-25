@@ -1,5 +1,5 @@
 Fold 1 Test Accuracy: 0.9553
-Fold 2 Test Accuracy: 0.9543
-Fold 3 Test Accuracy: 0.9564
-Fold 4 Test Accuracy: 0.9577
-Fold 5 Test Accuracy: 0.9543
+Fold 2 Test Accuracy: 0.9530
+Fold 3 Test Accuracy: 0.9556
+Fold 4 Test Accuracy: 0.9551
+Fold 5 Test Accuracy: 0.9525

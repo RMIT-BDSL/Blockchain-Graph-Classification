@@ -5,6 +5,6 @@ model:
     dropout: 0.5
     hidden_channels: 64
     num_layers: 2
-    out_channels: 32
+    out_channels: 2
   type: GAT
 pretrained: false
