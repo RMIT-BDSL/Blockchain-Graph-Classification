@@ -4,7 +4,7 @@ checkpoint: "checkpoints/elliptic"
 model:
   type: "SAGE"
   params:
-    hidden_channels: 64
+    hidden_channels: 128
     out_channels: 2
     num_layers: 2
     dropout: 0.5

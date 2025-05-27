@@ -10,10 +10,10 @@ training:
   pretrain_epochs: 50
   finetune_epochs: 100
   epochs: 1024
-  patience: 50
+  patience: 64
 
 optimizer:
   type: adam
-  lr: 0.004
+  lr: 0.01
   weight_decay: 0.0005
   momentum: 0.9

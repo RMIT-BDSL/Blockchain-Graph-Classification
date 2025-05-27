@@ -2,7 +2,7 @@ data:
   data_path: data/elliptic/elliptic_data.pt
   weights_only: false
 optimizer:
-  lr: 0.004
+  lr: 0.01
   momentum: 0.9
   type: adam
   weight_decay: 0.0005
@@ -11,7 +11,7 @@ training:
   epochs: 1024
   finetune_epochs: 100
   fold: 5
-  patience: 50
+  patience: 64
   pretrain_epochs: 50
   ratio:
   - 0.8
